@@ -16,7 +16,7 @@ body {
     padding: 30px 80px 40px;
     overflow: hidden;
     background-color: #ffffff;
-    background-image: url("./background_header.svg");
+    background-image: url("../images/background_header.svg");
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
