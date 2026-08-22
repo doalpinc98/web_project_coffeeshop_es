@@ -70,9 +70,94 @@
     </header>
 
     <main class="content">
-      <section id="reservation" class="reservation"></section>
-    </main>
+      
+    
 
-    <footer id="contacts" class="footer"></footer>
+    <section class="reservation" id="reservation">
+  <h2 class="reservation__title">Reservar una mesa</h2>
+  <form class="reservation__form">
+    <fieldset class="reservation__fieldset">
+      <!-- Campo Nombre -->
+      <label class="reservation__label" for="owner-name">Nombre *</label>
+      <input
+        type="text"
+        class="reservation__input"
+        id="owner-name"
+        placeholder="Nombre"
+        required
+      />
+
+      <!-- Campo Número de comensales -->
+      <label class="reservation__label" for="guests-count">Número de comensales *</label>
+      <input
+        type="number"
+        class="reservation__input"
+        id="guests-count"
+        placeholder="1-8"
+        required
+      />
+
+      <!-- Campo Fecha y hora -->
+      <label class="reservation__label" for="reservation-date">Fecha y hora *</label>
+      <input
+        type="datetime-local"
+        class="reservation__input"
+        id="reservation-date"
+        required
+      />
+
+      <!-- Campo Correo electrónico -->
+      <label class="reservation__label" for="owner-email">Tu correo electrónico *</label>
+      <input
+        type="email"
+        class="reservation__input"
+        id="owner-email"
+        placeholder="email@email.com"
+        required
+      />
+
+      <!-- Botón de Envío -->
+      <button type="submit" class="reservation__button">Reservar una mesa</button>
+
+      <!-- Checkbox con etiqueta -->
+      <label class="reservation__label reservation__label_type_checkbox" for="terms-checkbox">
+        <input
+          type="checkbox"
+          class="reservation__checkbox"
+          id="terms-checkbox"
+          required
+        />
+        <span class="reservation__checkbox-text">Acepto los términos de uso</span>
+      </label>
+    </fieldset>
+  </form>
+</section>
+</main>
+
+    <footer id="contacts" class="footer">
+  <div class="footer__circle"></div>
+  <div class="footer__content">
+    <img src="./images/logo_coffeeshop_light.svg" alt="Logo Triple Espresso" class="footer__logo" />
+    
+    <div class="footer__social">
+      <h3 class="footer__social-title">Redes sociales</h3>
+      <ul class="footer__social-list">
+        <li class="footer__social-item">
+          <a href="#" class="footer__social-link" target="_blank">
+            <img src="./images/facebook_white.svg" alt="Icono Facebook" class="footer__social-icon" />
+            Facebook
+          </a>
+        </li>
+        <li class="footer__social-item">
+          <a href="#" class="footer__social-link" target="_blank">
+            <img src="./images/instagram_white.svg" alt="Icono Instagram" class="footer__social-icon" />
+            Instagram
+          </a>
+        </li>
+      </ul>
+    </div>
+  </div>
+  <p class="footer__copyright">© 2026 Doménica Pincay</p>
+</footer>
   </body>
 </html>

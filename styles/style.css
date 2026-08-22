@@ -1,3 +1,7 @@
+@import url(./normalize.css);
+@import url(./reservation.css);
+@import url(./footer.css);
+
 body {
     min-width: 1100px;
     max-width: 1600px;
@@ -120,3 +124,15 @@ body {
   .info-text {
     margin: 0;
   }
+/* Dentro de styles/style.css */
+
+/* Clase base del enlace del menú (asegúrate de que incluya la transición) */
+.nav-link {
+  /* Tus estilos actuales (font-family, font-size, etc.) */
+  transition: color 0.3s ease; 
+}
+
+/* Estado hover requerido por el brief */
+.nav-link:hover {
+  color: #FF976B; /* Transición al naranja de acento */
+}
